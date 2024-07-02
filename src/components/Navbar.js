@@ -61,7 +61,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
                             className="flex items-center cursor-pointer hover:bg-black/5 p-2 rounded-md transition-all"
                             onClick={toggleDropdown}
                         >
-                            <span className="ml-2 font-semibold  flex items-center gap-2">
+                            <span className="ml-0 lg:ml-2 font-semibold flex items-center gap-2 text-sm lg:text-base">
                                 {userName}
                                 <FontAwesomeIcon icon={faCircleUser} className="text-3xl text-gray-300" />
                             </span>

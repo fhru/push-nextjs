@@ -21,7 +21,7 @@ const FilterButtons = ({ handleCategoryFilter, handleRatingFilter, resetFilter }
     };
 
     return (
-        <div className="flex justify-center items-center gap-2 p-3 mt-3">
+        <div className="flex flex-wrap justify-center items-center gap-2 p-3 mt-3">
             <button
                 onClick={() => handleCategoryClick('Makanan')}
                 className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Makanan' ? 'bg-ijo/10' : ''}`}

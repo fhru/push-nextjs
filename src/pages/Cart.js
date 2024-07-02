@@ -77,27 +77,27 @@ const Cart = () => {
                 />
             </div>
 
-            <div className="py-4 px-10 lg:px-20 relative bottom-28">
-                <div className="text-6xl text-white font-bold relative bottom-16 text-center lg:text-left">
+            <div className="py-4 px-3 lg:px-20 relative bottom-28">
+                <div className="text-5xl lg:text-6xl text-white font-bold relative bottom-16 text-center lg:text-left">
                     Food Cart
                 </div>
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 gap-2 lg:gap-4">
                     {cart.length > 0 ? cart.map((menuItem, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg flex items-center p-2 h-28">
+                        <div key={index} className="bg-white rounded-lg shadow-lg flex items-center p-2 h-20 lg:h-28">
                             <Image
                                 src={menuItem.gambar}
                                 alt={menuItem.nama}
                                 width={500}
                                 height={500}
-                                className="object-cover rounded-md h-24 w-24 aspect-square"
+                                className="object-cover rounded-md h-16 lg:w-24 w-16 lg:h-24 aspect-square"
                             />
                             <div className="basis-auto w-full h-full flex flex-col justify-center pl-4">
-                                <div className="text-xl font-semibold">{menuItem.nama}</div>
-                                <div className="text-lg text-gray-700">
+                                <div className="text-sm lg:text-lg font-semibold">{menuItem.nama}</div>
+                                <div className="text-sm lg:text-lg text-gray-700">
                                     Rp {parseInt(menuItem.harga).toLocaleString()}
                                 </div>
                             </div>
-                            <div className="basis-auto flex justify-center items-center gap-2 w-full">
+                            <div className="basis-auto flex justify-center items-center gap-0 lg:gap-2 w-full">
                                 <button
                                     onClick={() => decreaseQuantity(index)}
                                     className="p-2 text-xl text-red-500/50 hover:text-red-500 transition-all"
@@ -114,7 +114,7 @@ const Cart = () => {
                                     <FontAwesomeIcon icon={faPlusCircle} />
                                 </button>
                             </div>
-                            <div className="basis-auto w-full h-full flex items-center justify-end pr-4">
+                            <div className="basis-auto w-full h-full flex items-center justify-end pr-2 lg:pr-4">
                                 <button
                                     onClick={() => removeFromCart(index)}
                                     className="p-2 hover:text-red-500 transition-all"
@@ -132,7 +132,7 @@ const Cart = () => {
 
                 {cart.length > 0 && (
                     <>
-                        <div className="text-xl font-semibold mt-8 text-right">
+                        <div className="text-sm lg:text-xl font-semibold mt-8 text-left lg:text-right">
                             Total: Rp {getTotalPrice().toLocaleString()}
                         </div>
                         <div className="flex justify-center items-center w-full">

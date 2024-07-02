@@ -28,7 +28,7 @@ const Notification = ({ message, type, onClose }) => {
     }
 
     return (
-        <div className={`fixed top-16 right-5 z-50 p-4 rounded-md shadow-lg flex items-center text-white ${bgColor} slideIn`}>
+        <div className={`fixed top-0 lg:top-16 right-0 lg:right-5 z-50 p-4 rounded-none lg:rounded-md shadow-lg flex items-center text-white ${bgColor} slideIn`}>
             <FontAwesomeIcon icon={icon} className="mr-3" />
             <div className="flex-1">{message}</div>
             <button onClick={onClose} className="ml-3">

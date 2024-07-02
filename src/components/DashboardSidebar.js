@@ -17,8 +17,8 @@ const DashboardSidebar = ({ setActiveTab }) => {
     };
 
     return (
-        <div className="w-64 shadow-lg h-screen bg-ijo/50">
-            <div className="p-4 font-bold text-xl flex items-center text-ijo bg-white">
+        <div className="w-32 lg:w-64 shadow-lg h-screen bg-ijo/50">
+            <div className="p-4 font-bold text-sm lg:text-xl flex items-center text-ijo bg-white">
                 <span onClick={handleGoBack} className="cursor-pointer mr-2">
                     <FontAwesomeIcon icon={faArrowLeftLong} />
                 </span>
@@ -26,13 +26,13 @@ const DashboardSidebar = ({ setActiveTab }) => {
             </div>
             <ul>
                 <li
-                    className={`p-4 hover:bg-white/40 cursor-pointer border-b border-white/50 font-semibold transition-all ${active === 'data' ? 'bg-white/50' : ''}`}
+                    className={`p-2 lg:p-4 text-sm lg:text-lg hover:bg-white/40 cursor-pointer border-b border-white/50 font-semibold transition-all ${active === 'data' ? 'bg-white/50' : ''}`}
                     onClick={() => handleTabClick('data')}
                 >
                     Data
                 </li>
                 <li
-                    className={`p-4 hover:bg-white/40 cursor-pointer border-b border-white/50 font-semibold transition-all ${active === 'user' ? 'bg-white/50' : ''}`}
+                    className={`p-2 lg:p-4 text-sm lg:text-lg hover:bg-white/40 cursor-pointer border-b border-white/50 font-semibold transition-all ${active === 'user' ? 'bg-white/50' : ''}`}
                     onClick={() => handleTabClick('user')}
                 >
                     User
