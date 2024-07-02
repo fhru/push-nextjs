@@ -182,6 +182,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={formData.nama}
                     onChange={handleInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -192,6 +193,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={formData.gambar}
                     onChange={handleInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -202,6 +204,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={formData.rating}
                     onChange={handleInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -212,6 +215,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={formData.alamat}
                     onChange={handleInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -222,6 +226,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={formData.category.join(', ')}
                     onChange={handleCategoryChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -235,6 +240,7 @@ const DashboardContent = ({ activeTab }) => {
                             value={menuItem.nama}
                             onChange={(e) => handleMenuChange(index, e)}
                             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                            required
                         />
                         <input
                             type="number"
@@ -243,6 +249,7 @@ const DashboardContent = ({ activeTab }) => {
                             value={menuItem.harga}
                             onChange={(e) => handleMenuChange(index, e)}
                             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                            required
                         />
                         <input
                             type="text"
@@ -251,6 +258,7 @@ const DashboardContent = ({ activeTab }) => {
                             value={menuItem.gambar}
                             onChange={(e) => handleMenuChange(index, e)}
                             className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                            required
                         />
                     </div>
                 ))}
@@ -291,6 +299,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={userFormData.username}
                     onChange={handleUserInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -301,6 +310,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={userFormData.email}
                     onChange={handleUserInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -311,6 +321,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={userFormData.name}
                     onChange={handleUserInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -321,6 +332,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={userFormData.role}
                     onChange={handleUserInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             <div>
@@ -331,6 +343,7 @@ const DashboardContent = ({ activeTab }) => {
                     value={userFormData.password}
                     onChange={handleUserInputChange}
                     className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                    required
                 />
             </div>
             {submitError && (
