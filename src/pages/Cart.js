@@ -22,12 +22,7 @@ const Cart = () => {
             return acc;
         }, []);
         setCart(groupedCart);
-        const isLogin = localStorage.getItem('isLoggedIn')
-        if (!isLogin) {
-            router.back()
-            alert("Anda Harus Login Terlebih Dahulu Sebelum Menggunakan Keranjang")
-        }
-    }, [router]);
+    }, []);
 
     const updateCartInLocalStorage = (updatedCart) => {
         const flatCart = updatedCart.flatMap(item => Array(item.quantity).fill(item));

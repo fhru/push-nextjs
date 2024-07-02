@@ -50,8 +50,8 @@ const Login = () => {
 
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100">
-            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-                <h2 className="text-2xl font-bold mb-6 text-center">Welcome, PUSH!</h2>
+            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md lg:m-0 m-4">
+                <h2 className="text-2xl font-bold mb-6 text-center">Welcome to PUSH!</h2>
                 {loginError && (
                     <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
                         <span className="block sm:inline">{loginError}</span>

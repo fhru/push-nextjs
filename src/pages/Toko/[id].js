@@ -118,7 +118,7 @@ const Toko = () => {
                 </div>
                 <div className="flex justify-start items-center flex-wrap lg:flex-nowrap py-3 w-full">
                     <div className="basis-auto w-full flex items-center justify-start h-full flex-col lg:flex-row">
-                        <div className="basis-auto text-3xl font-bold">
+                        <div className="basis-auto text-3xl font-bold text-center lg:text-left">
                             {item.nama}{" "}
                         </div>
                         <div className="basis-auto ml-2 py-2"

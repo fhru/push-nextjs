@@ -24,25 +24,25 @@ const FilterButtons = ({ handleCategoryFilter, handleRatingFilter, resetFilter }
         <div className="flex flex-wrap justify-center items-center gap-2 p-3 mt-3">
             <button
                 onClick={() => handleCategoryClick('Makanan')}
-                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Makanan' ? 'bg-ijo/10' : ''}`}
+                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Makanan' ? 'bg-ijo/20' : ''}`}
             >
                 Makanan
             </button>
             <button
                 onClick={() => handleCategoryClick('Minuman')}
-                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Minuman' ? 'bg-ijo/10' : ''}`}
+                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Minuman' ? 'bg-ijo/20' : ''}`}
             >
                 Minuman
             </button>
             <button
                 onClick={() => handleCategoryClick('Dessert')}
-                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Dessert' ? 'bg-ijo/10' : ''}`}
+                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'Dessert' ? 'bg-ijo/20' : ''}`}
             >
                 Dessert
             </button>
             <button
                 onClick={() => handleRatingClick(4)}
-                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'rating-4' ? 'bg-ijo/10' : ''}`}
+                className={`hover:bg-black/5 text-sm flex justify-center items-center border-2 border-black/20 px-4 py-2 rounded-full text-black/50 transition-all ${activeButton === 'rating-4' ? 'bg-ijo/20' : ''}`}
             >
                 Rating 4+
             </button>
